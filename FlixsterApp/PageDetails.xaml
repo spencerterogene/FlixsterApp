@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FlixsterApp.PageDetails">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame BackgroundColor="Black" Padding="5" CornerRadius="0">
+                <Label Text="Flixster" HorizontalTextAlignment="Center" 
+                       TextColor="DodgerBlue" FontSize="36"/>
+            </Frame>
+            <WebView x:Name="Video"
+                     Source=""
+                     WidthRequest="500"
+                     HeightRequest="500">
+            </WebView>
+            <Label x:Name="lblTitle"
+             TextColor="Black" FontSize="36" Padding="5"  HorizontalOptions="Center"/>
+
+            <Label x:Name="lblOverView"
+            TextColor="Black" FontSize="17" Padding="5"/>
+
+            <Label x:Name="lblOriginale_Language"
+             TextColor="Black" FontSize="17" Padding="5" HorizontalOptions="End"/>
+
+            <Label x:Name="lblRelease_date"
+             TextColor="Black" FontSize="17" Padding="5" HorizontalOptions="Start"/>
+
+            <Label x:Name="lblPopularity"
+            TextColor="Black" FontSize="17" Padding="5" HorizontalOptions="End"/>
+
+            <Label x:Name="lblVote_Average"
+             TextColor="Black" FontSize="17" Padding="5" HorizontalOptions="Start"/>
+
+            <Label x:Name="lblVote_Count"
+            Text="Vote_Count" TextColor="Black" FontSize="17" Padding="5" HorizontalOptions="End"/>
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
